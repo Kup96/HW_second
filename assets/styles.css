@@ -6,51 +6,97 @@
     box-sizing: border-box;
     background-color: blueviolet;
   }
+:root{
+    --height-for-photos_of_birds: 120px;
+    --width-for-photos_of_birds: 120px;
+    --font_for_hat_and_footer: 'Pacifico', cursive;
+}
 body{
     margin: 0 auto;
     max-width: 1200px;
   }
-.hat{
-    display: flex;
 
-    margin-top: 50px;
-    text-transform: uppercase;
-    align-items: center;
-}
 .link{
-    min-height: 45px;
+
+    height: 45px;
     width: 45px;
+    margin-bottom: 30px;
+    margin-top: -40px;
 }
+
+.hatTitle{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 45px;
+    font-family: var(--font_for_hat_and_footer);
+    
+}
+
 nav {
     display: flex;
-}
-nav ul {
+    margin-bottom: 30px;
+  }
+  
+  nav ul {
     display: flex;
     list-style-type: none;
-    flex:2;
-
-}
-nav li {
+    flex: 2;
+  }
+  
+  nav li {
     text-align: center;
     flex: 1;
-}
-nav a{
+  }
+  
+  nav a {
     text-decoration: none;
-}
+    text-transform: uppercase;
+    color: black;
+  }
 main {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.hatTitle{
-    text-transform: uppercase;
-    margin-left: 250px;
+nav ul{
+    display: flex;
+    justify-content: space-between;
 }
+
 .buttons{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-}
+    justify-content: space-between;
+    max-width: 410px;
+} 
 .textPhotos{
+    margin-bottom: 30px;
     text-transform: uppercase;
+}
+
+.vorobeyimg{
+    height: var(--height-for-photos_of_birds);
+    width: var(--width-for-photos_of_birds);
+}
+.eagleimg{
+    height: var(--height-for-photos_of_birds);
+    width: var(--width-for-photos_of_birds);
+}
+.sinicaimg{
+    height: var(--height-for-photos_of_birds);
+    width: var(--width-for-photos_of_birds);
+}
+.voronaimg{
+    height: var(--height-for-photos_of_birds);
+    width: var(--width-for-photos_of_birds);
+}
+.footer-container{
+    display:flex;
+    height: 300px;
+}
+.footerText{
+    display:flex;
+    align-items: flex-end;
+    font-family: var(--font_for_hat_and_footer);
 }
